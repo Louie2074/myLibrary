@@ -1,0 +1,102 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.addBook{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 100px;
+    font-size: larger;
+}
+
+.title{
+    text-align: center;
+    background-color: orange;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    top: 0;
+    font-size: 100px;
+    width: 100%;
+    left: 0;
+   
+}
+h1{
+    margin: 0;
+}
+
+.table{
+    display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+
+}
+
+.card{
+    display: inline-block;
+    background-color: gray;
+    height: 400px;
+    white-space: pre;
+    overflow: hidden;
+    width: 300px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+    color:blanchedalmond;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.modal{
+    display: none;
+}
+.modal-active{
+    display:block;
+    position: fixed;
+    background-color: white;
+    border-style: solid;
+    width: 400px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+    z-index: 10;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid black;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+}
+.overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+    pointer-events: none;
+   
+}
+
+.overlay-active{
+    opacity: 0.5;
+    pointer-events: all;
+}
+
+.read{
+    height: 30px;
+}
+.remove{
+    height: 30px;
+}

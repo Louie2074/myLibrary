@@ -99,7 +99,14 @@ overlay.addEventListener('click', () => {
 
 modalClose.addEventListener('click', () => {
   closeModal();
+  let x = [...inputs];
+
+  x.forEach((input) => {
+    if (input.type === 'checkbox') input.checked = false;
+    else input.value = '';
+  });
 });
+
 
 submit.addEventListener('click', () => {
   let x = [...inputs];

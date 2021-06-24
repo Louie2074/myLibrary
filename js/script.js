@@ -2,6 +2,7 @@ let myLibrary =
   localStorage['myLibrary'] !== undefined
     ? [...JSON.parse(localStorage['myLibrary'])]
     : [];
+    localStorage['myLibrary'] = JSON.stringify(myLibrary)
 const table = document.querySelector('.table');
 const add = document.querySelector('.addBook');
 const modalClose = document.querySelector('.close');
